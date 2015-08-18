@@ -1,0 +1,47 @@
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $open-sans;
+
+	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
+	font-smooth: always;
+  
+	font-smoothing: antialiased;   
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+	background-color: red; 
+}
+
+* a{
+	text-decoration: none;
+	color: $base_text;
+}
+img {
+	display: block;
+}
+
+:focus {outline:none;}
+button::-moz-focus-inner {
+  border: 0;
+}
+input {
+	outline-color: transparent;
+	box-shadow: 0px 0px 0px #888888;
+}
+
+// Clearfix
+%center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

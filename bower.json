@@ -1,0 +1,25 @@
+{
+  "name": "ng_design",
+  "version": "0.0.1",
+  "homepage": "https://github.com/monzoor-nc/ng_design",
+  "description": "resume management system",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Monzoor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.4",
+    "bootstrap": "~3.3.5"
+  }
+}
