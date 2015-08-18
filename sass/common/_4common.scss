@@ -9,9 +9,9 @@ body{
   
 	font-smoothing: antialiased;   
 	-moz-font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased; 
 	-webkit-font-smoothing: subpixel-antialiased;
-	background-color: red; 
+	padding-top: 50px;
 }
 
 * a{
@@ -44,4 +44,32 @@ input {
   content: "";
   display: table;
   clear: both;
+}
+
+.border {
+    border-top: 2px solid orange;
+    margin: 50px 0 50px 0;
+}
+.filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
 }

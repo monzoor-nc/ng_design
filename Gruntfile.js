@@ -43,7 +43,7 @@ grunt.initConfig({
 			},
 			sass: {
 			    files: '**/*.scss',
-			    tasks: ['sass_globbing','sass']
+			    tasks: ['sass_globbing','sass','concat']
 			  }
 		},
 		
@@ -65,8 +65,8 @@ grunt.initConfig({
 			css: {
 				files: {
 					'build/css/concat.css': [
-								'style/*.css',
-								'bower_components/bootstrap/dist/css/bootstrap.min.css'
+								'bower_components/bootstrap/dist/css/bootstrap.min.css',
+								'style/*.css'
 							]
 				}
 				
@@ -145,7 +145,7 @@ grunt.initConfig({
 
 		grunt deploy
 	*/
-	grunt.registerTask('server', ['express','watch']);
+	grunt.registerTask('server', ['express','concat','watch']);
 	grunt.registerTask('dev', ['concat','sass_globbing','sass']);
 
 	grunt.registerTask('deploy', ['sass_globbing','sass', 'concat', 'uglify', 'cssmin', 'clean']);
